@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirección - Encuesta Hotel Voga (Castellano)</title>
+    <script>
+        const urls = [
+        "https://forms.gle/example1",
+        "https://forms.gle/example2",
+        "https://forms.gle/example3",
+        "https://forms.gle/example4",
+        "https://forms.gle/example5",
+        "https://forms.gle/example6",
+        "https://forms.gle/example7",
+        "https://forms.gle/example8",
+        "https://forms.gle/example9",
+        "https://forms.gle/example10"
+        ];
+        const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+        window.location.replace(randomUrl);
+    </script>
+</head>
+<body>
+    <p>Redirigiendo a la encuesta en castellano... Si no se carga automáticamente, haz clic aquí:</p>
+    <a id="manualLink" href="#">Encuesta</a>
+    <script>document.getElementById("manualLink").href = urls[Math.floor(Math.random() * urls.length)];</script>
+</body>
+</html>

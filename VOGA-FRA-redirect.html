@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect – Hotel Voga Survey (Français)</title>
+    <script>
+        const urls = [
+        "https://forms.gle/example1",
+        "https://forms.gle/example2",
+        "https://forms.gle/example3",
+        "https://forms.gle/example4",
+        "https://forms.gle/example5",
+        "https://forms.gle/example6",
+        "https://forms.gle/example7",
+        "https://forms.gle/example8",
+        "https://forms.gle/example9",
+        "https://forms.gle/example10"
+        ];
+        const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+        window.location.replace(randomUrl);
+    </script>
+</head>
+<body>
+    <p>Redirecting to the survey in {lang_name}... If it doesn't load automatically, click here:</p>
+    <a id="manualLink" href="#">Survey</a>
+    <script>document.getElementById("manualLink").href = urls[Math.floor(Math.random() * urls.length)];</script>
+</body>
+</html>

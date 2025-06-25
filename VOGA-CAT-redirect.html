@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecció - Enquesta Hotel Voga (Català)</title>
+    <script>
+        const urls = [
+        "https://forms.gle/VOGA-CAT-Form1",
+        "https://forms.gle/VOGA-CAT-Form2",
+        "https://forms.gle/VOGA-CAT-Form3",
+        "https://forms.gle/VOGA-CAT-Form4",
+        "https://forms.gle/VOGA-CAT-Form5",
+        "https://forms.gle/VOGA-CAT-Form6",
+        "https://forms.gle/VOGA-CAT-Form7",
+        "https://forms.gle/VOGA-CAT-Form8",
+        "https://forms.gle/VOGA-CAT-Form9",
+        "https://forms.gle/VOGA-CAT-Form10"
+        ];
+        const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+        window.location.replace(randomUrl);
+    </script>
+</head>
+<body>
+    <p>Redirigint a l'enquesta en català... Si no es carrega automàticament, fes clic aquí:</p>
+    <a id="manualLink" href="#">Enquesta</a>
+    <script>document.getElementById("manualLink").href = urls[Math.floor(Math.random() * urls.length)];</script>
+</body>
+</html>
